@@ -94,7 +94,7 @@
                       <li class="dropdown notification-list list-inline-item">
                           <div class="dropdown notification-list nav-pro-img">
                               <a class="dropdown-toggle nav-link arrow-none nav-user" data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="false">
-                                  <img src="../assets/user.jpeg" alt="user" class="rounded-circle">
+                                  <img src="src/assets/user.jpeg" alt="user" class="rounded-circle">
                               </a>
                               <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
                                   <!-- item-->
@@ -183,8 +183,8 @@
                               <ul class="submenu">
                                   <li><a>Active Doctors</a></li>
                                   <li><a>InActive Doctors</a></li>
-                                  <li><a>Add Doctor</a></li>
-                                  <li><a>All Doctors</a></li>
+                                  <li><a  @click="$router.push({path : `/DoctorFormView`})&& rout('Clinics')">Add Doctor</a></li>
+                                  <li><a  @click="$router.push({path : `/DoctorListView`})&& rout('Clinics')">All Doctors</a></li>
                               </ul>
                           </li>
   
@@ -193,8 +193,8 @@
                               <ul class="submenu">
                                   <li><a>Active Patients</a></li>
                                   <li><a>InActive Patients</a></li>
-                                  <li><a>Add Patient</a></li>
-                                  <li><a>All Patients</a></li>
+                                  <li><a  @click="$router.push({path : `/PatientFormView`})&& rout('Clinics')">Add Patient</a></li>
+                                  <li><a  @click="$router.push({path : `/PatientListView`})&& rout('Clinics')">All Patients</a></li>
                               </ul>
                           </li>
   
@@ -323,13 +323,13 @@
                       <div class="page-title-box">
                           <div class="row align-items-center">
                               <div class="col-sm-6">
-                                  <h4 class="page-title">{{pathss}}</h4>
+                                  <h4 class="page-title">Dashboard</h4>
                               </div>
                               <div class="col-sm-6">
                                   <ol class="breadcrumb float-right">
                                       <li class="breadcrumb-item"><a>RTS</a></li>
 
-                                      <li class="breadcrumb-item active">{{pathss}}</li>
+                                      <li class="breadcrumb-item active">Dashboard</li>
                                   </ol>
                               </div>
                           </div>

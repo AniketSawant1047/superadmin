@@ -1,6 +1,6 @@
 <template>
     <body id="app">
-       <table class="tables">
+       <table class="table">
            <thead>
               <tr>
                <th> Name</th>                

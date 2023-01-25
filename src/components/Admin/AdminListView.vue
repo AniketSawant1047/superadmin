@@ -1,34 +1,21 @@
 <template>
-    <head>
-        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
-       <!-- CSS only -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    </head> 
-   <home-view></home-view>
      <body id="app">
-        <table table table-bordered table-dark table-striped class="table">
+        <table class="table">
             <thead>
                <tr>
-                <th>Name</th>
-                
+                <th> Name</th>                
+                <th> Email</th>
                 <th>Phone</th>
-                <th>Email</th>
-                <th>Doctor Type</th>
-                <th>Specialization</th>
-                <th>State</th>
-                <th>Status</th>
+                <th>Address</th>
                 <th>&nbsp;&nbsp;&nbsp; Action &nbsp;&nbsp;&nbsp;</th>
                </tr>
             </thead>
             <tbody>
-                <tr v-for="doctorList in list" :key="doctorList">
-                    <td > {{(doctorList.first_name)}} {{(doctorList.last_name)}}</td>
-                    <td>{{(doctorList.phone)}}</td>
-                    <td>{{(doctorList.specialization)}}</td>
-                    <td>{{(doctorList.email)}}</td>
-                    <td>{{(doctorList.doctorType)}}</td>                   
-                    <td>{{(doctorList.state)}}</td>
-                    <td>{{(doctorList.status)}}</td>
+                <tr v-for="admin in list" :key="admin">
+                    <td > {{(admin.adminName)}}</td>
+                    <td>{{(admin.adminEmail)}}</td>
+                    <td>{{(admin.adminPhone)}}</td>
+                    <td>{{(admin.adminAddress)}}</td>
                     <td>
                         <router-link class="router-link"  to="WebsocketView"><i class="fa-solid fa-comment"></i></router-link>
                         <router-link class="router-link"  to="GmailSenderView"> <i class="fa-solid fa-envelope"></i></router-link>
@@ -43,19 +30,16 @@
 <script>
 import axios from 'axios';
 export default{
-    name: "PatientListView",
+    name: "AdminListView",
     data(){
         return{
             list:[]
         }
     },
     async mounted(){
-        // let result = await axios.get("http://localhost:8080/findAllD");
-        // this.list = result.data
-
-        axios.get('http://localhost:8080/findAllD',{
-     headers:{
-      Authorization: 'Bearer' +localStorage.getItem('token')
+        axios.get('http://localhost:8080/alladmins',{
+        headers:{
+        Authorization: 'Bearer' +localStorage.getItem('token')
  
   }
 }).then(response => {
@@ -64,7 +48,7 @@ export default{
         })
         .catch(error =>{
             this.errors.push(error);
-            console.log(error);
+            
         })
     },
 
@@ -78,8 +62,10 @@ export default{
 #app{
     width: 100%;
 }
-.table{
+.tables{
     width: 100%;
+    color: white;
+    background: transparent;
 }
 .router-link{
     text-decoration: none;
@@ -110,14 +96,13 @@ td, th {
 }
 
 thead th{
-    background-color: rgb(26, 25, 25);
-    color: white;
+    background-color: #30419b;
+    color: rgb(194, 194, 194);
     border: rgb(124, 124, 124) 1px solid;
+    font-size: 14px;
 }
 
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
+
 tbody td,tr{
     border: rgb(124, 124, 124) 1px solid;
 }

@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import LoginView from '../components/LoginView.vue'
+import LoginView from '../components/Login/LoginView.vue'
 
 const routes = [
   {
@@ -10,52 +10,62 @@ const routes = [
   {
     path: '/HomeView',
     name: 'HomeView',
-    component: () => import('../components/HomePageView.vue'),
+    component: () => import('../components/Home-Dashboard/HomePageView.vue'),
     children: [
       {
         path: '/DashboardView',
         name: 'DashboardView',
-        component: () => import('../components/DashboardView.vue')
+        component: () => import('../components/Home-Dashboard/DashboardView.vue')
       },     
       {
         path: '/AdminFormView',
         name: 'AdminFormView',
-        component: () => import('../components/AdminFormView.vue')
+        component: () => import('../components/Admin/AdminFormView.vue')
       },
       {
         path: '/AdminListView',
         name: 'AdminListView',
-        component: () => import('../components/AdminListView.vue')
+        component: () => import('../components/Admin/AdminListView.vue')
       },
       {
         path: '/BusinessFormView',
         name: 'BusinessFormView',
-        component: () => import('../components/BusinessFormView.vue')
+        component: () => import('../components/Business/BusinessFormView.vue')
       },
       {
         path: '/BusinessListView',
         name: 'BusinessListView',
-        component: () => import('../components/BusinessListView.vue')
-      },
-      {
-        path: '/DoctorFormView',
-        name: 'DoctorFormView',
-        component: () => import('../components/DoctorFormView.vue')
-      },
-      {
-        path: '/DoctorListView',
-        name: 'DoctorListView',
-        component: () => import('../components/DoctorListView.vue')
+        component: () => import('../components/Business/BusinessListView.vue')
       },
       {
         path: '/ClinicFormView',
         name: 'ClinicFormView',
-        component: () => import('../components/ClinicFormView.vue')
+        component: () => import('../components/Clinics/ClinicFormView.vue')
       },
       {
         path: '/ClinicListView',
         name: 'ClinicListView',
-        component: () => import('../components/ClinicListView.vue')
+        component: () => import('../components/Clinics/ClinicListView.vue')
+      },
+      {
+        path: '/DoctorFormView',
+        name: 'DoctorFormView',
+        component: () => import('../components/Doctors/DoctorFormView.vue')
+      },
+      {
+        path: '/DoctorListView',
+        name: 'DoctorListView',
+        component: () => import('../components/Doctors/DoctorListView.vue')
+      },
+      {
+        path: '/PatientFormView',
+        name: 'PatientFormView',
+        component: () => import('../components/Patients/PatientRegistrationView.vue')
+      },
+      {
+        path: '/PatientListView',
+        name: 'PatientListView',
+        component: () => import('../components/Patients/PatientListView.vue')
       },
     ]
   },
