@@ -23,7 +23,7 @@
                     <td>{{(clinicList.clinicAddress)}}</td>
                     <td>{{(clinicList.clinicCity)}}</td>
                     <td>{{(clinicList.clinicState)}}</td>                   
-                    <td>{{(clinicList.clinicPincode)}}</td>
+                    <td>{{(clinicList.primaryDoctor)}}</td>
                     <td>{{(clinicList.dateAdded)}}</td>
                     <td>{{(clinicList.status)}}</td>
                     <td>{{(clinicList.lastModifedBy)}}</td>
@@ -46,7 +46,7 @@ export default{
         }
     },
     async mounted(){
-        axios.get('http://localhost:8080/clinicList',{})
+        axios.get('http://192.168.1.35:8080/clinicList',{})
         .then(response => {
             this.list = response.data;
             console.log(response.data);
@@ -63,53 +63,52 @@ export default{
 </script>
 
 <style scoped>
+
 #app{
-    width: 100%;
+   width: 100%;
 }
-.table{
-    width: 100%;
-    font-family: arial, sans-serif;
-  font-size: 12px;
-  border-collapse: collapse;
-  width: 100%;
-  text-align: center;
+.tables{
+   width: 100%;
+   color: white;
+   background: transparent;
 }
 .router-link{
-    text-decoration: none;
-    background-color: rgb(10, 116, 255);
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-    margin: 5px;
-    padding: 5px;
-    box-sizing: border-box;
+   text-decoration: none;
+   background-color: rgb(10, 116, 255);
+   color: rgb(255, 255, 255);
+   font-size: 10px;
+   margin: 5px;
+   padding: 5px;
+   box-sizing: border-box;
 }
 .router-link:hover{
-    position: relative;
-    top: 2px;
-    background-color: rgb(65, 147, 255);
+   position: relative;
+   top: 2px;
+   background-color: rgb(65, 147, 255);
 }
-
- 
+table {
+ font-family: arial, sans-serif;
+ font-size: 12px;
+ border-collapse: collapse;
+ text-align: center;
+}
 
 td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-  text-align: center;
+ border: 1px solid #dddddd;
+ text-align: left;
+ padding: 8px;
+ text-align: center;
 }
 
-thead{
-    background-color: rgb(26, 25, 25);
-    color: white;
-    border: rgb(124, 124, 124) 1px solid;
-  
+thead th{
+   background-color: #30419b;
+   color: rgb(194, 194, 194);
+   border: rgb(124, 124, 124) 1px solid;
+   font-size: 14px;
 }
 
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
+
 tbody td,tr{
-    border: rgb(124, 124, 124) 1px solid;
+   border: rgb(124, 124, 124) 1px solid;
 }
-
 </style>

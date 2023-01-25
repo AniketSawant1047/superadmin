@@ -6,7 +6,7 @@
   
         <table class="table">
             <tr class="head">
-                <td colspan="2" class="headline"> <i class="fa-solid fa-pencil"></i> Doctor Form</td>
+                <td colspan="2" class="headline"> <i class="fa-solid fa-pencil"></i> Clinics Form</td>
                 <td > </td>
             </tr>
             <tr>
@@ -85,7 +85,7 @@ export default{
             clinicPincode:this.clinicPincode,
             affiliateDoctor:this.affiliateDoctor,
             primaryDoctor:this.primaryDoctor,
-            status: this.selected,
+            clinicStatus: this.selected,
         
            });
 

@@ -1,14 +1,5 @@
 <template>
-    <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.8/css/intlTelInput.css" />
-    </head>
     <body class="register">
-    <div class="nav">
-        <div id="nav">Doctors</div>
-        <span><router-link to="/HomeView" style="color:rgb(168, 168, 168)" class="router-link">Home ></router-link></span>
-        <span style="color: rgb(26, 118, 255);">Doctors</span>
-    </div>
-    <hr>
         <table class="table">
             <tr class="head">
                 <td colspan="2" class="headline"> <i class="fa-solid fa-pencil"></i> Doctor Form</td>
@@ -83,7 +74,7 @@
                         <option  value="Enabled" >Enabled</option>
                         <option value="Disabled">Disabled</option>
                     </select>
-    `           </td>
+               </td>
             </tr>
             <tr>
                 <td>
@@ -162,9 +153,15 @@ export default{
 .register{
     width: 100%;
 }
+.table{
+   width:  100%;
+}
+.firsttd{
+    width: 10%;
+}
 .head{
    
-    background-color: rgb(26, 118, 255);
+    background-color: #30419b;
     height: 40px;
     color: white;
     text-align: start;
@@ -181,16 +178,17 @@ export default{
     margin: 10px 10px 10px 20px;
     border: 1px solid skyblue;
     border-radius: 5px;
+    background: transparent;
+    color: white;
 }
 thead, tbody, tr, th{
     font-size: 12px;
     border-style: solid;
     border-width: 1px;
-    border: 1px rgb(145, 145, 145) solid;
+    border: 1px rgba(145, 145, 145, 0.418) solid;
 }
-.firsttd{
-    width: 10%;
-}
+td{
+    border: none}
 .lable{
     display: flex;
     justify-content: end;
@@ -204,18 +202,16 @@ thead, tbody, tr, th{
     height: 40px;
     margin: 10px;
     text-align: center;
-    padding-top: 12px;
+    padding-top: 0px;
     box-sizing: border-box;
     border-radius: 5px;
     color: white;
     display: inline-block;
     background-color: rgb(53, 134, 255);
     border: none;
-   
 }
 button:hover, button:focus{
     background-color: rgb(53, 199, 102);
-    
 }
 .router-link{
     text-decoration: none;
@@ -250,5 +246,3 @@ button:hover, button:focus{
 
 }
 </style>
-
-  

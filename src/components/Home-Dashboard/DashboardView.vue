@@ -121,7 +121,7 @@
                   <a class="friends-suggestions-list">
                       <div class="border-bottom position-relative">
                           <div class="float-left mb-0 mr-3">
-                              <img src="assets/images/user-2.jpg" alt="" class="rounded-circle thumb-md">
+                              <img src="src/assets/images/user-2.jpg" alt="" class="rounded-circle thumb-md">
                           </div>
                           <div class="suggestion-icon float-right mt-2 pt-1">
                               <i class="mdi mdi-plus"></i>
@@ -137,7 +137,7 @@
                   <a class="friends-suggestions-list">
                       <div class="border-bottom position-relative">
                           <div class="float-left mb-0 mr-3">
-                              <img src="assets/images/user-3.jpg" alt="" class="rounded-circle thumb-md">
+                              <img src="src/assets/images/user-3.jpg" alt="" class="rounded-circle thumb-md">
                           </div>
                           <div class="suggestion-icon float-right mt-2 pt-1">
                               <i class="mdi mdi-plus"></i>
@@ -153,7 +153,7 @@
                   <a class="friends-suggestions-list">
                       <div class="border-bottom position-relative">
                           <div class="float-left mb-0 mr-3">
-                              <img src="assets/images/user-4.jpg" alt="" class="rounded-circle thumb-md">
+                              <img src="src/assets/images/user-4.jpg" alt="" class="rounded-circle thumb-md">
                           </div>
                           <div class="suggestion-icon float-right mt-2 pt-1">
                               <i class="mdi mdi-plus"></i>
@@ -169,7 +169,7 @@
                   <a class="friends-suggestions-list">
                       <div class="border-bottom position-relative">
                           <div class="float-left mb-0 mr-3">
-                              <img src="assets/images/user-5.jpg" alt="" class="rounded-circle thumb-md">
+                              <img src="src/assets/images/user-5.jpg" alt="" class="rounded-circle thumb-md">
                           </div>
                           <div class="suggestion-icon float-right mt-2 pt-1">
                               <i class="mdi mdi-plus"></i>
@@ -185,7 +185,7 @@
                   <a class="friends-suggestions-list">
                       <div class="position-relative">
                           <div class="float-left mb-0 mr-3">
-                              <img src="assets/images/user-6.jpg" alt="" class="rounded-circle thumb-md">
+                              <img src="src/assets/images/user-6.jpg" alt="" class="rounded-circle thumb-md">
                           </div>
                           <div class="suggestion-icon float-right mt-2 pt-1">
                               <i class="mdi mdi-plus"></i>
@@ -272,7 +272,7 @@
                               <td>$9,420,000</td>
                               <td>
                                   <div>
-                                      <img src="assets/images/user-2.jpg" alt="" class="thumb-md rounded-circle mr-2"> Jassa
+                                      <img src="src/assets/images/user-2.jpg" alt="" class="thumb-md rounded-circle mr-2"> Jassa
                                   </div>
                               </td>
                               <td>Ludhiana</td>
@@ -290,7 +290,7 @@
                               <td>$3,120,000</td>
                               <td>
                                   <div>
-                                      <img src="assets/images/user-3.jpg" alt="" class="thumb-md rounded-circle mr-2"> Jassa
+                                      <img src="src/assets/images/user-3.jpg" alt="" class="thumb-md rounded-circle mr-2"> Jassa
                                   </div>
                               </td>
                               <td>Ludhiana</td>
@@ -308,7 +308,7 @@
                               <td>$6,360,000</td>
                               <td>
                                   <div>
-                                      <img src="assets/images/user-4.jpg" alt="" class="thumb-md rounded-circle mr-2"> Jassa
+                                      <img src="src/assets/images/user-4.jpg" alt="" class="thumb-md rounded-circle mr-2"> Jassa
                                   </div>
                               </td>
                               <td>Ludhiana</td>
@@ -326,7 +326,7 @@
                               <td>$5,200,000</td>
                               <td>
                                   <div>
-                                      <img src="assets/images/user-5.jpg" alt="" class="thumb-md rounded-circle mr-2"> Jassa
+                                      <img src="src/assets/images/user-5.jpg" alt="" class="thumb-md rounded-circle mr-2"> Jassa
                                   </div>
                               </td>
                               <td>Ludhiana</td>
@@ -344,7 +344,7 @@
                               <td>$7,250,000</td>
                               <td>
                                   <div>
-                                      <img src="assets/images/user-6.jpg" alt="" class="thumb-md rounded-circle mr-2"> Jassa
+                                      <img src="src/assets/images/user-6.jpg" alt="" class="thumb-md rounded-circle mr-2"> Jassa
                                   </div>
                               </td>
                               <td>Ludhiana</td>

@@ -1,8 +1,8 @@
 <template>
     <body>
-        <img src="../assets/logo.png" alt="" style="position: relative;">
+        <img src="./Images/logo.png" alt="" style="position: relative;">
         <div class="form">
-            <img src="../assets/login.png" alt="" style="margin-left: 22%;">
+            <img src="./Images/login.png" alt="" style="margin-left: 22%;">
             <br><br>
             <div class="input-group mb-3">
              <span class="input-group-text" id="basic-addon1">@</span>
@@ -50,7 +50,7 @@
 </script>
 <style scoped>
 body {
-    background-image: url("../assets/AdminBackground.jpg");
+    background-image: url("./Images/AdminBackground.jpg");
     background-size: 100%;
     background-repeat: repeat;
     font-family: 'Roboto', sans-serif;
